@@ -51,3 +51,8 @@
 } 
     
  console.log(playRound(playerSelection, computerSelection));
+
+ // a function `game` that calls `playRound` and play five rounds of the game while saving results.//
+ function game () {
+    
+ }
