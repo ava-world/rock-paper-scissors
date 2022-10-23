@@ -20,12 +20,32 @@
 var playerSelection = prompt("rock, paper, or scissors?");
 var computerSelection = "getComputerChoice";
 function playRound (playerSelection, computerSelection) { 
-    if ((playerSelection ="rock") && (computerSelection ="paper")) {
-        return ("you loose! paper beats rock");
-    } else if ((playerSelection ="rock") && (computerSelection ="scissors")) {
-        return ("Hooray! rock beats scissors");
-    } else if ((playerSelection ="rock") && (computerSelection ="rock")) {
-        return ("Try again! it's a tie");
+    if (playerSelection ="rock")  {
+        if (computerSelection = "paper") {
+            return ("you loose! paper covers rock");
+        } else if (computerSelection= "scissors") {
+            return ("Hooray! rock crushes scissors");
+        } else if (computerSelection = "rock") {
+            return ("Try again! it's a tie");
+        }
+    } else if (playerSelection = "paper") {
+        if (computerSelection = "rock") {
+            return ("Hooray! paper covers rock");
+        } else if (computerSelection - "scissors") {
+            return ("you loose! Scissors cut paper");
+        } else if (computerSelection = "paper") {
+            return ("Try again! it's a tie");
+        }
+    }   else if (playerSelection = "scissors") {
+        if (computerSelection = "rock") {
+            return ("you loose! rock crushes scissors");
+        } else if (computerSelection = "paper") {
+            return ("Hooray! Scissors cut paper");
+        } else if (computerSelection = "scissors") {
+            return ("Try again! it's a tie");
+        }
+    } else {
+        return ("there is an unknown error");
     }
 } 
     
