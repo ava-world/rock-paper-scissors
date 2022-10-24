@@ -48,6 +48,21 @@
     } else {
         return ("there is an unknown error");
     }
+    let ("you loose! paper covers rock") = "you loose";
+    let ("Hooray! rock crushes scissors") = "you win";
+    let ("Hooray! paper covers rock") = "you win";
+    let ("you loose! Scissors cut paper") = "you loose";
+    let ("you loose! rock crushes scissors") = "you loose";
+    let ("Hooray! Scissors cut paper") = "you win";
+    let ("Try again! it/s a tie") = "try again";
+
+    if ("you loose") {
+        console.log("A");
+    } else if ("you win") {
+        console.log("B");
+    } else if ("try again") {
+        console.log("retry");
+    }
 } 
     
  console.log(playRound(playerSelection, computerSelection));
@@ -55,4 +70,8 @@
  // a function `game` that calls `playRound` and play five rounds of the game while saving results.//
  function game () {
     
+
+    for (let i = 0; i < 5; i++) {
+        
+     }
  }
