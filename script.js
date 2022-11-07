@@ -17,7 +17,7 @@
    // console.log(getComputerChoice);
 
 // a function that plays a single round of Rock Paper Scissors
-    var playerSelection = prompt("rock, paper, or scissors?");
+    var playerSelection = "";
     var playerSelection = playerSelection.toLowerCase (); //i used this to make my input case insensitive
     var computerSelection = getComputerChoice ();
     let playerScore=0;
@@ -60,7 +60,7 @@
     } else {
         return ("there is an unknown error");
     }
-}
+} // i removed the console.log so my function `game` would work//
     
 
  // a function `game` that calls `playRound` and play five rounds of the game while saving results.//
@@ -71,10 +71,11 @@
         var playerSelection = prompt("rock, paper, or scissors?");
     var playerSelection = playerSelection.toLowerCase (); //i used this to make my input case insensitive
     var computerSelection = getComputerChoice ();
-    let playerScore=0;
-    let computerScore=0;
-    let tieScore=0;
+    
         var playGame = playRound(playerSelection, computerSelection);
-        console.log (playGame) ;
+        console.log (playGame);
+        console.log (playerScore);
+        console.log (computerScore);
+        console.log (tieScore);
      } 
- } console.log (game());
+ } console.log (game ());
