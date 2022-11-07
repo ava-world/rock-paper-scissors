@@ -77,5 +77,11 @@
         console.log (playerScore);
         console.log (computerScore);
         console.log (tieScore);
-     } 
+     } if (playerScore > computerScore && tieScore) {
+        return ("Great!, you won this round");
+     }  else if (computerScore > playerScore && tieScore) {
+        return ("Sorry bud!, you lost");
+     }  else if (tieScore > playerScore && computerScore) {
+        return ("No winner!, let's go again");
+        }
  } console.log (game ());
